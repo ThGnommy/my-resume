@@ -1,0 +1,23 @@
+.experience-tab {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 4px 5px 5px 0px rgba(186,186,186,0.75);
+    margin-bottom: 30px;
+    width: 1000px;
+    padding: 10px 20px;
+    transition: all 500ms ease-out;
+}
+
+.experience-tab:hover {
+    margin-left: 30px;
+    transform: scale(1.05);
+    box-shadow: 5px 6px 6px 0px rgba(186,186,186,0.85);
+
+}
+
+.exp-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
