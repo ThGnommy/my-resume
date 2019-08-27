@@ -1,15 +1,15 @@
 import React from 'react'
 import './Experience.css'
 
-const Experience = (props) => {
+const Experience = ({job, year, details}) => {
     return (
         <div className="experience-tab">
             <div className="exp-details">
-                <p>{props.job}</p>
-                <p>{props.year}</p>
+                <p className="job">{job}</p>
+                <p>{year}</p>
             </div>
             <div className="exp-description">
-                <p>{props.details}</p>
+                <p>{details}</p>
             </div>
         </div>
     )

@@ -4,7 +4,6 @@ body {
 }
 
 .App {
-    /* text-align: center; */
     margin: 20px;
 }
 
@@ -13,4 +12,13 @@ body {
     color: #8b0d13;
     font-size: 1.5rem;
     font-style: bold;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 1.5px;
+    background: #8b0d13;
+    margin-top: 5px;
 }
