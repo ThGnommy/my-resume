@@ -6,6 +6,7 @@ import Title from './components/Title/Title'
 import Experience from './components/Experience/Experience'
 import Certification from './components/Certification/Certification'
 import Contacts from './components/Contacts/Contacts'
+import Portfolio from './components/Portfolio/Portfolio'
 
 function App() {
 
@@ -13,10 +14,13 @@ function App() {
     app: {
       display: 'flex',
       flexDirection: 'row',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
+      alignItems: 'flex-start'
     },
     contact: {
-      float: 'right'
+      position: 'sticky',
+      top: 20,
+      right: 50
     }
   }
 
@@ -58,12 +62,11 @@ function App() {
           job="Technical Sound Designer"
           year="2019"
           details="BELKRLKGNELKRJBFVLEJKBCJKEBHCKJEHVKJEHCVJKEHCVKJEBHVCKJEBHVKJBHWKVJBHEKJBVH  " />
-
-
       </div>
 
       <div style={styles.contact}>
         <Contacts />
+        <Portfolio />
       </div>
     </div>
   );
