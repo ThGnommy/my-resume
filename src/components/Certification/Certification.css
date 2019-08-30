@@ -29,3 +29,24 @@
         width: 900px;
     }
 }
+
+@media screen and (max-width: 1400px)
+{
+    .certification-tab {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1300px)
+{
+    .certification-tab {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .certification-tab {
+        width: 1000px;
+    }
+}

@@ -1,8 +1,9 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive'
+import MediaQuery from 'react-responsive'
 import './reset.css';
 import './App.css';
 import Title from './components/Title/Title'
-// import About from './components/About Me/About'
 import Experience from './components/Experience/Experience'
 import Certification from './components/Certification/Certification'
 import Contacts from './components/Contacts/Contacts'
@@ -11,12 +12,6 @@ import Portfolio from './components/Portfolio/Portfolio'
 function App() {
 
   const styles = {
-    app: {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignItems: 'flex-start'
-    },
     contact: {
       position: 'sticky',
       top: 20,
@@ -24,8 +19,9 @@ function App() {
     }
   }
 
+
   return (
-    <div style={styles.app} className="App">
+    <div className="App">
 
       <div className="resume">
         <Title name="Thomas Brandoli"/>
