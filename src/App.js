@@ -1,6 +1,4 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive'
-import MediaQuery from 'react-responsive'
 import './reset.css';
 import './App.css';
 import Title from './components/Title/Title'
@@ -8,17 +6,9 @@ import Experience from './components/Experience/Experience'
 import Certification from './components/Certification/Certification'
 import Contacts from './components/Contacts/Contacts'
 import Portfolio from './components/Portfolio/Portfolio'
+import styles from './App.css';
 
 function App() {
-
-  const styles = {
-    contact: {
-      position: 'sticky',
-      top: 20,
-      right: 50
-    }
-  }
-
 
   return (
     <div className="App">
@@ -60,7 +50,7 @@ function App() {
           details="BELKRLKGNELKRJBFVLEJKBCJKEBHCKJEHVKJEHCVJKEHCVKJEBHVCKJEBHVKJBHWKVJBHEKJBVH  " />
       </div>
 
-      <div style={styles.contact}>
+      <div className={styles.contacts}>
         <Contacts />
         <Portfolio />
       </div>
