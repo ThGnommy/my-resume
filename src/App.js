@@ -6,12 +6,13 @@ import Experience from './components/Experience/Experience'
 import Certification from './components/Certification/Certification'
 import Contacts from './components/Contacts/Contacts'
 import Portfolio from './components/Portfolio/Portfolio'
-import styles from './App.css';
+import styles from './App.css'
+
 
 function App() {
 
   return (
-    <div className="App">
+    <div className={styles.App}>
 
       <div className="resume">
         <Title name="Thomas Brandoli"/>
@@ -50,7 +51,7 @@ function App() {
           details="BELKRLKGNELKRJBFVLEJKBCJKEBHCKJEHVKJEHCVJKEHCVKJEBHVCKJEBHVKJBHWKVJBHEKJBVH  " />
       </div>
 
-      <div className={styles.contacts}>
+      <div className={styles.contactsDiv}>
         <Contacts />
         <Portfolio />
       </div>
