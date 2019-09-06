@@ -1,6 +1,4 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive'
-import MediaQuery from 'react-responsive'
 import './reset.css';
 import './App.css';
 import Title from './components/Title/Title'
@@ -8,6 +6,8 @@ import Experience from './components/Experience/Experience'
 import Certification from './components/Certification/Certification'
 import Contacts from './components/Contacts/Contacts'
 import Portfolio from './components/Portfolio/Portfolio'
+import { Button } from "react-bulma-components/full";
+
 
 function App() {
 
