@@ -6,7 +6,6 @@ import Experience from './components/Experience/Experience'
 import Certification from './components/Certification/Certification'
 import Contacts from './components/Contacts/Contacts'
 import Portfolio from './components/Portfolio/Portfolio'
-import { Button } from "react-bulma-components/full";
 
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
 
   return (
     <div className="App">
-
       <div className="resume">
         <Title name="Thomas Brandoli"/>
 
