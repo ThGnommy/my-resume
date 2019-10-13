@@ -1,9 +1,11 @@
-.certification-tab {
-}
-
 .where {
     flex: 1;
 }
 .job {
     flex: 1;
 }
+
+.certification-tab .job {
+    font-weight: bold!important;
+}
+

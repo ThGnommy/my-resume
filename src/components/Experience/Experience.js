@@ -6,7 +6,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './Experience.css'
 
-const Experience = ({job, year, details}) => {
+const Experience = ({job, where, year, details}) => {
 
     return (
         <div className="experience-tab">
@@ -19,8 +19,9 @@ const Experience = ({job, year, details}) => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
             >
-            <Typography>{job}</Typography>
-            <Typography>{year}</Typography>
+            <Typography className="job">{job}</Typography>
+            <Typography className="where">{where}</Typography>
+            <Typography className="year">{year}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
                 <Typography>

@@ -1,3 +1,7 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
 body {
     /* background-color: #E3E3E3!important;     */
     color: #fff;
@@ -13,8 +17,7 @@ body {
 }
 
 .MuiExpansionPanelSummary-root {
-    border-bottom: 1px solid rgba(0, 0, 0, .125)!important;
-    
+    border-bottom: 1px solid rgba(0, 0, 0, .125)!important;   
 }
 
 .MuiExpansionPanelDetails-root {
@@ -36,4 +39,13 @@ body {
 a {
     color: #fff;
     text-decoration: none;
+}
+
+.year {
+    font-style: italic;
+}
+
+.no-white {
+    color: black!important;
+    text-decoration-line: underline;
 }
