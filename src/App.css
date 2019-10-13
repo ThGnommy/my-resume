@@ -1,12 +1,39 @@
 body {
-    background-color: #646C79;
+    /* background-color: #E3E3E3!important;     */
     color: #fff;
+}
+
+.MuiExpansionPanel-root {
+    background-color: #F6F6F8!important;
+    color: black!important;
 }
 
 .MuiExpansionPanelSummary-content {
     justify-content: space-between;
 }
 
-.MuiExpansionPanel-root {
-    margin: 40px 0;
+.MuiExpansionPanelSummary-root {
+    border-bottom: 1px solid rgba(0, 0, 0, .125)!important;
+    
+}
+
+.MuiExpansionPanelDetails-root {
+    background-color: #F6F6F8!important;
+}
+
+.cert-first, .exp-first {
+    margin: 0 0 40px 0;
+}
+
+.cert-all, .exp-all {
+    margin: 40px 0 0 0;
+}
+
+.section-title {
+    color: #000;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }

@@ -1,0 +1,22 @@
+.MuiTab-root
+{
+    background-color: #0062A6!important;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    background-color: #0062A6!important;   
+    /* height: 168px;  */
+}
+
+.PrivateTabIndicator-colorSecondary
+{
+    background-color: white!important;
+}
+
+div .sidebar .MuiBox-root {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
