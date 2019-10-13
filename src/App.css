@@ -1,3 +1,12 @@
-.resume {
-    border: 2px solid black;
+body {
+    background-color: #646C79;
+    color: #fff;
+}
+
+.MuiExpansionPanelSummary-content {
+    justify-content: space-between;
+}
+
+.MuiExpansionPanel-root {
+    margin: 40px 0;
 }

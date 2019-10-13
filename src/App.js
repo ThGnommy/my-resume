@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import { Grid, Container } from '@material-ui/core'
 import Title from './components/Title/Title'
 import Experience from './components/Experience/Experience'
 import Certification from './components/Certification/Certification'
 import Contacts from './components/Contacts/Contacts'
 import Portfolio from './components/Portfolio/Portfolio'
+import { Grid, Box } from '@material-ui/core'
+
 
 
 function App() {
@@ -15,9 +16,8 @@ function App() {
       <Grid container direction="row" >
       <Grid container sm={8} xs={12} className="resume">
       <Grid item sm={12} xs={12} >
-          <Title name="Thomas Brandoli"/>
+        <Title name="Thomas Brandoli"/>
         <h1 className="section-title">Formazione</h1>
-
       <Certification
           job="C# Course"
           where="Udemy"

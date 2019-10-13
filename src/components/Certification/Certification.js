@@ -1,37 +1,35 @@
 import React from 'react'
 import './Certification.css'
+import { Box, Grid, Typography } from '@material-ui/core'
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const Certification = ({job, year, where, details}) => {
 
-    const styles = {
-        p: {
-            fontStyle: 'italic',
-            opacity: '0.8',
-            
-        },
-        where: {
-            display: 'flex',
-            justifyContent: 'center',
-            fontStyle: 'italic',
-            opacity: '0.8',
-            borderBottom: '1px solid #000',
-            paddingBottom: 3,
-            width: '90%',
-            margin: 'auto',
-            borderColor: '#8b0d13',
-            marginBottom: 10
-    }}
-
     return (
         <div className="certification-tab">
-                <p  style={styles.where}>{where}</p>
-            <div className="cert-details">
-                <p style={styles.p}>{job}</p>
-                <p style={styles.p}>{year}</p>
-            </div>
-            <div className="cert-description">
-                <p>{details}</p>
-            </div>
+        <Grid>
+            <Box boxShadow={5}>
+                <ExpansionPanel>
+                    <ExpansionPanelSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                    >
+                    <Typography className="where">{where}</Typography>
+                    <Typography className="job">{job}</Typography>
+                    <Typography className="year">{year}</Typography>
+                    </ExpansionPanelSummary>
+                    <ExpansionPanelDetails>
+                    <Typography>
+                        {details}
+                    </Typography>
+                    </ExpansionPanelDetails>
+                </ExpansionPanel>
+            </Box>
+        </Grid>
         </div>
     )
 }
