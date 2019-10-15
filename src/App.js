@@ -8,12 +8,41 @@ import SideBar from './components/SideTab/SideTab'
 
 function App() {
 
-
-
   const codecademy = (
     <div>
         <p>Questo corso di Codecademy, della durata di 10 settimane mi ha dato solide basi di sviluppo web. Imparando HTML, CSS, Javascript e l'utilizzo di Git.</p>
         <p>Il progetto finale del corso:</p><a className="no-white" href="https://thgnommy.github.io/Match-Game/">Match Game</a>
+    </div>
+  )
+
+  const codevGames = (
+    <div>
+      <p>
+        Ho collaborato con questo team indie per lo sviluppo dell'fps <strong>Pylow</strong>, sviluppato in Unity.
+        Il mio lavoro è stato quello di creare tutti i suoni del gioco, e di implementarli nel middleware FMOD.
+      </p>
+      <p>Qui il trailer realizzato da me, mi sono occupato sia del montaggio video che del sound design:</p>
+      <a className="a-black" href="https://youtu.be/aNkXOA64DmY" target="_blank" rel="noopener noreferrer">Trailer</a>
+    </div>
+  )
+
+  const tizDevelopers = (
+    <div>
+      <p>
+        Attutalmente collaboro con questo team indie. Stiamo sviluppando un videogioco horror chiamato<br></br>
+        <strong> Seven: Inheritance of the Evil One</strong></p>
+        <p>Il game engine che utilizziamo è Unreal Engine 4.
+        Personalmente mi occupo del lato audio a 360°. Dalla creazione dei suoni, all'implementazione dell'audio utilizzando FMOD
+        e il linguaggio di visual scripting Blueprint.</p>
+      <p>Questo il trailer realizzato da me per la Milan Games Week 2019. Mi sono occupato sia del montaggio video che del sound design:</p>
+      <a className="a-black" href="https://youtu.be/Q3pw_QAYj1M" target="_blank" rel="noopener noreferrer">Trailer</a>
+    </div>
+  )
+
+  const webAndMore = (
+    <div>
+      <p>Sviluppo e mantenimento di siti web in Wordpress, utilizzando il framework Genesis.</p>
+      <p>Sviluppo di applicazioni utilizzando la libreria Javascript React.</p>
     </div>
   )
 
@@ -29,7 +58,7 @@ function App() {
               job="C# Course"
               where="Udemy"
               year="2017"
-              details="In questo corso Udemy, ho imparato le basi del linguaggio di programmazione C#." />
+              details="In questo corso Udemy, ho imparato le basi del linguaggio di programmazione C# in ambiente .NET" />
         </div>
 
         <div className="cert-all">
@@ -45,9 +74,9 @@ function App() {
           job="FMOD Course"
           where="School of Game Audio"
           year="2017"
-          details="Ho imparato il middlewere " />
+          details="Attraverso questo percorso, ho imparato ad utilizzare il middleware audio FMOD Studio
+          implementandolo in CUBE Engine, e ricreando tutti i suoni del gioco CUBE." />
         </div>
-
 
       </Grid>
 
@@ -58,7 +87,7 @@ function App() {
             job="Technical Sound Designer"
             where="Codev Games"
             year="2017 - 2018"
-            details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+            details={codevGames} />
           </div>
 
           <div className="exp-all">
@@ -66,7 +95,7 @@ function App() {
             job="Technical Sound Designer"
             where="Tiz Developers"
             year="2018  - Present"
-            details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+            details={tizDevelopers} />
           </div>
 
           <div className="exp-all">
@@ -74,7 +103,7 @@ function App() {
             job="Web Developer"
             where="Web & More"
             year="2019 - Present"
-            details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+            details={webAndMore}/>
           </div>
 
         </Grid>
