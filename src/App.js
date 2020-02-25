@@ -8,6 +8,13 @@ import SideBar from './components/SideTab/SideTab'
 
 function App() {
 
+  const accademiaDelCinema = (
+    <div>
+      <p>Diplomato presso l'Accademia Nazionale del Cinema di Bologna come tecnico del suono.</p>
+      <p>Voto: 27/30</p>
+    </div>
+  )
+
   const codecademy = (
     <div>
         <p>Questo corso di Codecademy, della durata di 10 settimane mi ha dato solide basi di sviluppo web. Imparando HTML, CSS, Javascript e l'utilizzo di Git.</p>
@@ -53,7 +60,16 @@ function App() {
       <Grid item sm={12} xs={12} >
         <Title name="Thomas Brandoli"/>
         <h1 className="section-title">Formazione</h1>
+
         <div className="cert-first">
+          <Certification
+              job="Tecnico del Suono"
+              where="Accademia Nazionale del Cinema di Bologna"
+              year="2013"
+              details={accademiaDelCinema} />
+        </div>
+
+        <div className="cert-all">
           <Certification
               job="C# Course"
               where="Udemy"
