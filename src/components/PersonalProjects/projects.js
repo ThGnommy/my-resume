@@ -15,7 +15,7 @@ export const MATCH_GAME = {
 
 export const WEATHER_APP = {
     title: 'Another Weather Application',
-    text: 'Un\'applicazione che ti permette di ottenere le previsioni meteo di una città. Sviluppato con webpack e integrando le API di geolocalizzazione',
+    text: 'Un\'applicazione che ti permette di ottenere le previsioni meteo di una città. Sviluppato con webpack e integrando le API di geolocalizzazione.',
     link: <Typography>
                 <Link style={{color: "#fff", textDecoration: "underline"}} 
                 href="https://another-weather-application.netlify.app/" 
@@ -67,6 +67,19 @@ export const REACT_TO_DO = {
     link: <Typography>
                 <Link style={{color: "#fff", textDecoration: "underline"}} 
                 href="https://thgnommy.github.io/todo-app-react/" 
+                rel="noopener noreferrer" 
+                target="_blank">
+                    Link
+                </Link>
+            </Typography>
+}
+
+export const SOCIAL_MEDIA_DASHBOARD = {
+    title: 'Social Media Dashboard',
+    text: 'Esempio di una social media dashboard utilizzando HTML e CSS. Esercizio preso di frontendmentor.io',
+    link: <Typography>
+                <Link style={{color: "#fff", textDecoration: "underline"}} 
+                href="https://thgnommy.github.io/social-media-dashboard-with-theme-switcher-master/" 
                 rel="noopener noreferrer" 
                 target="_blank">
                     Link

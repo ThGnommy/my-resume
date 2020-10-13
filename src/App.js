@@ -119,7 +119,7 @@ function App() {
           <Experience
             job="Web Developer"
             where="Web & More"
-            year="2019 - Present"
+            year="Settembre 2019 - Marzo 2020"
             details={webAndMore}/>
           </div>
 
