@@ -5,6 +5,7 @@ import Experience from './components/Experience/Experience'
 import Certification from './components/Certification/Certification'
 import { Grid } from '@material-ui/core'
 import SideBar from './components/SideTab/SideTab'
+import { PersonalProjects } from './components/PersonalProjects/PersonalProjects';
 
 function App() {
 
@@ -110,7 +111,7 @@ function App() {
           <Experience
             job="Technical Sound Designer"
             where="Tiz Developers"
-            year="2018  - Present"
+            year="2018"
             details={tizDevelopers} />
           </div>
 
@@ -128,6 +129,7 @@ function App() {
 
         <Grid item sm={4} xs={12}className="contacts">
         <SideBar></SideBar>
+        <PersonalProjects />
         </Grid>
       </Grid>
     </div>
