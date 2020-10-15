@@ -27,7 +27,7 @@ export const WEATHER_APP = {
 }
 export const BOOK_APP = {
     title: 'Google Book Finder',
-    text: 'Applicazione React (+ useReducer) utilizzando le API di Google Books e Material UI.',
+    text: 'Applicazione React (+ Redux) utilizzando le API di Google Books e Material UI.',
     link: <Typography>
                 <Link style={{color: "#fff", textDecoration: "underline"}} 
                 href="https://th-book-finder.netlify.app/" 
